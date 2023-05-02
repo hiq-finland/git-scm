@@ -33,3 +33,13 @@ The ugly?
 ## Introduction <br>to Git CLI
 
 ![bg contain](./xkcd_1597_git.png)
+
+---
+## Why use Git CLI
+
+Benefits to using Git CLI comprared with a Git client with a GUI:
+
+- Efficiency: Using Git CLI can be faster (when you have enough experience)
+- Flexibility: More flexibility with all the command-line arguments and options; Git GUIs, however, often offer limited options
+- Automation: You can write scripts to perform tasks or complex Git operations automatically;
+- Portability: Git CLI is available on almost all platforms
