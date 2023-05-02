@@ -18,7 +18,7 @@ paginate: true
 
 ---
 ## We want you to participate!
-You can contact [Jesse](mailto:jesse.taina@hiq.fi) or [Miro](mailto:miro.lehteva@hiq.fi) if you want to be part of 
+You can contact [Jesse](mailto:jesse.taina@hiq.fi) or [Miro](mailto:miro.lehteva@hiq.fi) if you want to be part of
 - Bringing up topics to cover
 - Be part of making these presentations by making a pull request to this [repo](https://github.com/hiq-finland/git-scm)
 - Become a presenter yourself!
@@ -28,3 +28,8 @@ You can contact [Jesse](mailto:jesse.taina@hiq.fi) or [Miro](mailto:miro.lehteva
 The good?
 The bad?
 The ugly?
+
+---
+## Introduction <br>to Git CLI
+
+![bg contain](./xkcd_1597_git.png)
