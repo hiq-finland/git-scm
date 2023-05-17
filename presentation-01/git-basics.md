@@ -30,6 +30,31 @@ The bad?
 The ugly?
 
 ---
+## Why would you use SCM like Git?
+
+- Log of changes to the source code
+  - Who made the changes?
+  - When the changes were made?
+  - What changed and why? 
+- Allow multiple people to edit the same source files
+  - Everyone has their own local copy of the source files
+  - Changes can be reviewed before merging to main
+- Bookmark specific points in the history as releases
+  - For example "v1.2.3" or "production"
+
+---
+## What are versions?
+
+---
+
+## Different ways of versioning and why does it matter?
+
+### What kind of changes do you think happened between these versions
+- Focal Fossa and Jammy Jellyfish 
+- 61404 and 61405
+- 2.0.0 and 2.1.0
+
+---
 ## Introduction <br>to Git CLI
 
 ![bg contain](./xkcd_1597_git.png)
