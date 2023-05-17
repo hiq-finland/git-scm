@@ -34,8 +34,8 @@ The ugly?
 
 - Log of changes to the source code
   - Who made the changes?
-  - When the changes were made?
-  - What changed and why? 
+  - When were the changes made?
+  - What changed and why?
 - Allow multiple people to edit the same source files
   - Everyone has their own local copy of the source files
   - Changes can be reviewed before merging to main
