@@ -68,3 +68,70 @@ Benefits to using Git CLI comprared with a Git client with a GUI:
 - Flexibility: More flexibility with all the command-line arguments and options; Git GUIs, however, often offer limited options
 - Automation: You can write scripts to perform tasks or complex Git operations automatically;
 - Portability: Git CLI is available on almost all platforms
+
+---
+
+## Git CLI introduction
+
+#### git init
+
+Initializes a new Git repository in the current directory.
+
+```bash
+$ mkdir project1
+$ cd project1
+$ git init
+```
+
+---
+
+#### git status
+
+Shows the current status of the repository.
+
+```bash
+$ echo "<h1>Hello from project1</h1>" > index.html
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+---
+
+#### git add
+
+git add: Adds changes to the staging area.
+
+```
+$ git add index.html
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+```
+
+The staging area lets you control what changes will be included in the next commit.
+
+---
+#### git commit
+
+Commits changes to the repository.
+
+```
+$ git commit -m "feat: create index.html"
+[master (root-commit) 1b02118] feat: create index.html
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+```
+
+The flag `-m` lets you write a commit message in the terminal.
