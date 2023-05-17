@@ -78,9 +78,9 @@ Benefits to using Git CLI comprared with a Git client with a GUI:
 Initializes a new Git repository in the current directory.
 
 ```bash
-$ mkdir project1
-$ cd project1
-$ git init
+mkdir project1
+cd project1
+git init
 ```
 
 ---
@@ -102,13 +102,14 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+
 ---
 
 #### git add
 
 git add: Adds changes to the staging area.
 
-```
+```bash
 $ git add index.html
 $ git status
 On branch master
@@ -125,13 +126,64 @@ The staging area lets you control what changes will be included in the next comm
 ---
 #### git commit
 
-Commits changes to the repository.
+Commits changes to (the local copy of) the repository.
 
-```
+```bash
 $ git commit -m "feat: create index.html"
 [master (root-commit) 1b02118] feat: create index.html
  1 file changed, 1 insertion(+)
  create mode 100644 index.html
 ```
 
-The flag `-m` lets you write a commit message in the terminal.
+The flag `-m` lets you write a commit message directly in the terminal.
+
+[Conventional commits](https://www.conventionalcommits.org) provides a good set of rules for creating explicit commit messages. These rules are followed in this series.
+
+---
+#### Commit - what and why?
+
+- A commit is a snapshot of the current state of a project at the time in which that commit is made.
+- Git does not track differences but instead records the entire contents of each file in every commit.
+  - Changes between commits can be compared with `git diff`. The command takes two input data sets and outputs the changes between them.
+- Commits let us keep track not only of what was changed but when, by whom and why that change was made.
+
+---
+
+#### git log
+
+Displays the commit history.
+
+```bash
+$ git log
+commit 1b0211871bf0d01d750b809612bc456f153d62b5 (HEAD -> master)
+Author: Taina Jesse <jesse.taina@hiq.fi>
+Date:   Wed May 17 12:14:21 2023 +0300
+
+    feat: create index.html
+```
+
+---
+
+#### git branch
+
+Lists all branches in the repository.
+
+```bash
+$ git branch
+* master
+```
+
+---
+
+#### git switch
+
+Switches between branches. Creates new ones with the flag `-c`.
+
+```bash
+$ git switch -c feature1
+Switched to a new branch 'feature1'
+
+$ git branch
+* feature1
+  master
+```
