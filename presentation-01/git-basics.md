@@ -71,9 +71,15 @@ Benefits to using Git CLI comprared with a Git client with a GUI:
 
 ---
 
+### Git Book
+
+See [Git Book](https://git-scm.com/book/en/v2) for good information and tutorials
+
+---
+
 ### Working with a local repository
 
-#### git init
+#### [git init](https://git-scm.com/docs/git-init)
 
 Initializes a new Git repository in the current directory.
 
@@ -85,7 +91,7 @@ git init
 
 ---
 
-#### git status
+#### [git status](https://git-scm.com/docs/git-status)
 
 Shows the current status of the repository.
 
@@ -105,7 +111,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ---
 
-#### git add
+#### [git add](https://git-scm.com/docs/git-add)
 
 git add: Adds changes to the staging area.
 
@@ -124,7 +130,8 @@ Changes to be committed:
 The staging area lets you control what changes will be included in the next commit.
 
 ---
-#### git commit
+
+#### [git commit](https://git-scm.com/docs/git-commit)
 
 Commits changes to (the local copy of) the repository.
 
@@ -146,10 +153,11 @@ The flag `-m` lets you write a commit message directly in the terminal.
 - Git does not track differences but instead records the entire contents of each file in every commit.
   - Changes between commits can be compared with `git diff`. The command takes two input data sets and outputs the changes between them.
 - Commits let us keep track not only of what was changed but when, by whom and why that change was made.
+- See also [Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
 ---
 
-#### git log
+#### [git log](https://git-scm.com/docs/git-log)
 
 Displays the commit history.
 
@@ -164,7 +172,7 @@ Date:   Wed May 17 12:14:21 2023 +0300
 
 ---
 
-#### git branch
+#### [git branch](https://git-scm.com/docs/git-branch)
 
 Lists all branches in the repository.
 
@@ -175,7 +183,7 @@ $ git branch
 
 ---
 
-#### git switch
+#### [git switch](https://git-scm.com/docs/git-switch)
 
 Switches between branches. Creates new ones with the flag `-c`.
 
@@ -190,7 +198,7 @@ $ git branch
 
 ---
 
-#### git merge (pt. 1)
+#### [git merge](https://git-scm.com/docs/git-merge) (pt. 1)
 
 Merge the commits of one branch into another branch
 
@@ -209,7 +217,7 @@ Switched to branch 'master'
 
 ---
 
-#### git merge (pt. 2)
+#### [git merge](https://git-scm.com/docs/git-merge) (pt. 2)
 
 ```bash
 $ git merge feature1
