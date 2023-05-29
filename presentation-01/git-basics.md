@@ -66,12 +66,12 @@ Benefits to using Git CLI comprared with a Git client with a GUI:
 
 - Efficiency: Using Git CLI can be faster (when you have enough experience)
 - Flexibility: More flexibility with all the command-line arguments and options; Git GUIs, however, often offer limited options
-- Automation: You can write scripts to perform tasks or complex Git operations automatically;
+- Automation: You can write scripts to perform tasks or complex Git operations automatically
 - Portability: Git CLI is available on almost all platforms
 
 ---
 
-## Git CLI introduction
+### Working with a local repository
 
 #### git init
 
@@ -186,4 +186,48 @@ Switched to a new branch 'feature1'
 $ git branch
 * feature1
   master
+```
+
+---
+
+#### git merge (pt. 1)
+
+Merge the commits of one branch into another branch
+
+```bash
+$ git branch
+* feature1
+  master
+
+$ git commit -a
+[feature1 8c8c631] feat: add some content to index.html
+ 1 file changed, 1 insertion(+)
+
+$ git switch master
+Switched to branch 'master'
+ ```
+
+---
+
+#### git merge (pt. 2)
+
+```bash
+$ git merge feature1
+Updating 1b02118..8c8c631
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+$ git log
+commit 8c8c63191ec311f2709b839efbd1d564b1644f92 (HEAD -> master, feature1)
+Author: Taina Jesse <jesse.taina@hiq.fi>
+Date:   Mon May 29 14:16:08 2023 +0300
+
+    feat: add some content to index.html
+
+commit 1b0211871bf0d01d750b809612bc456f153d62b5
+Author: Taina Jesse <jesse.taina@hiq.fi>
+Date:   Wed May 17 12:14:21 2023 +0300
+
+    feat: create index.html
 ```
