@@ -71,9 +71,26 @@ Benefits to using Git CLI comprared with a Git client with a GUI:
 
 ---
 
-### Git Book
+### Git resources
 
-See [Git Book](https://git-scm.com/book/en/v2) for good information and tutorials
+- See [Git Book](https://git-scm.com/book/en/v2) for good information and tutorials
+- See [Git Docs](https://git-scm.com/docs) for reference
+
+---
+
+### Configuring git
+
+#### [git config](https://git-scm.com/docs/git-config)
+
+Username and email need to be set for logging changes. They are added to commit messages along with everything else.
+
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+Run the command without the --global option if you need to override the global config in a particular project.
+
 
 ---
 
